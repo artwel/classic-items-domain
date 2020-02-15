@@ -10,3 +10,12 @@ spring:
           time_zone: UTC
   liquibase:
     enabled: false
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: TRACE
+        type:
+          descriptor:
+            sql: TRACE

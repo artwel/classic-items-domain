@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin("*")
@@ -23,8 +24,10 @@ public class ItemController implements ItemsApi {
     }
 
     @Override
-    public ResponseEntity<List<Item>> findItems() {
-        return new ResponseEntity<>(itemService.findItems(), HttpStatus.OK);
+    public ResponseEntity<List<Item>> findItems(
+            @Valid @RequestParam(value = "own", required = false) Optional<Boolean> own,
+            @Valid @RequestParam(value = "slots", required = false) Optional<List<Slot>> slots) {
+        return new ResponseEntity<>(itemService.findItems(own, slots), HttpStatus.OK);
     }
 
     @Override

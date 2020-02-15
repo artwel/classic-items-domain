@@ -3,6 +3,7 @@ package de.artwel.wow.item;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -14,8 +15,8 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
-    public List<Item> findItems() {
-        return itemDao.findAll();
+    public List<Item> findItems(Optional<Boolean> own, Optional<List<Slot>> slots) {
+        return itemDao.search(own, slots);
     }
 
     @Override
