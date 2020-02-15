@@ -19,6 +19,8 @@ public class Item {
 
     private int phase;
 
+    private boolean own;
+
     @OneToOne
     private Source source;
 
@@ -60,6 +62,14 @@ public class Item {
 
     public void setPhase(int phase) {
         this.phase = phase;
+    }
+
+    public boolean isOwn() {
+        return own;
+    }
+
+    public void setOwn(boolean own) {
+        this.own = own;
     }
 
     public Source getAvailableFrom() {
