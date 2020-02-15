@@ -1,0 +1,8 @@
+package de.artwel.wow.source;
+
+public enum Type {
+
+    RAID,
+    DUNGEON,
+    WORLDBOSS
+}
