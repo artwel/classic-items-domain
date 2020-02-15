@@ -93,7 +93,7 @@
                             <generateSupportingFiles>false</generateSupportingFiles>
                             <generateModels>false</generateModels>
                             <generateApiDocumentation>false</generateApiDocumentation>
-                            <!--                            <configHelp>true</configHelp>-->
+                            <!--<configHelp>true</configHelp>-->
                             <configOptions>
                                 <sourceFolder>src/main/java</sourceFolder>
                                 <interfaceOnly>true</interfaceOnly>

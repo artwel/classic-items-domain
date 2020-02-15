@@ -17,4 +17,14 @@ public class ItemServiceImpl implements ItemService {
     public List<Item> findItems() {
         return itemDao.findAll();
     }
+
+    @Override
+    public Item getById(Long id) {
+        return itemDao.getOne(id);
+    }
+
+    @Override
+    public Item save(Item item) {
+        return itemDao.save(item);
+    }
 }
