@@ -11,11 +11,11 @@ public class Source {
 
     private Type type;
 
-    private String dungeon;
+    private String location;
 
-    private String boss;
+    private String target;
 
-    private String url;
+    private int wowHeadId;
 
     public Long getId() {
         return id;
@@ -33,27 +33,27 @@ public class Source {
         this.type = type;
     }
 
-    public String getDungeon() {
-        return dungeon;
+    public String getLocation() {
+        return location;
     }
 
-    public void setDungeon(String dungeon) {
-        this.dungeon = dungeon;
+    public void setLocation(String dungeon) {
+        this.location = dungeon;
     }
 
-    public String getBoss() {
-        return boss;
+    public String getTarget() {
+        return target;
     }
 
-    public void setBoss(String boss) {
-        this.boss = boss;
+    public void setTarget(String boss) {
+        this.target = boss;
     }
 
-    public String getUrl() {
-        return url;
+    public int getWowHeadId() {
+        return wowHeadId;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setWowHeadId(int wowHeadId) {
+        this.wowHeadId = wowHeadId;
     }
 }
