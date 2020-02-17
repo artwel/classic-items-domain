@@ -4,5 +4,9 @@ public enum Type {
 
     RAID,
     DUNGEON,
-    WORLDBOSS
+    WORLDBOSS,
+    PVP,
+    QUEST,
+    PROFESSION,
+    CONTAINER
 }

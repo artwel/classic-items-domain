@@ -1,6 +1,8 @@
 package de.artwel.wow.source;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.Id;
 
 @Entity
@@ -9,13 +11,14 @@ public class Source {
     @Id
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     private Type type;
 
     private String location;
 
     private String target;
 
-    private int wowHeadId;
+    private Integer wowHeadId;
 
     public Long getId() {
         return id;
@@ -49,11 +52,11 @@ public class Source {
         this.target = boss;
     }
 
-    public int getWowHeadId() {
+    public Integer getWowHeadId() {
         return wowHeadId;
     }
 
-    public void setWowHeadId(int wowHeadId) {
+    public void setWowHeadId(Integer wowHeadId) {
         this.wowHeadId = wowHeadId;
     }
 }

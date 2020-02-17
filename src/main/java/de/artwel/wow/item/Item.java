@@ -72,11 +72,11 @@ public class Item {
         this.own = own;
     }
 
-    public Source getAvailableFrom() {
+    public Source getSource() {
         return source;
     }
 
-    public void setAvailableFrom(Source source) {
+    public void setSource(Source source) {
         this.source = source;
     }
 }
